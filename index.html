@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let arr = [-5,-7,6,12,4,8,9,3,1,10];
+      // arr.sort(function(a, b){return a-b});
+      // console.log(arr);
+
+      //   without sort method
+      let array = ["v", "e", "l", "m", "u", "r", "u", "g", "a", "n"];
+      let temp;
+      for (i = 0; i < array.length; i++) {
+        for (j = i; j < array.length; j++) {
+          if (array[i] > array[j]) {
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+        }
+        console.log(array[i]);
+      }
+    </script>
+  </body>
+</html>
